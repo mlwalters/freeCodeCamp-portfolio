@@ -8,8 +8,13 @@
 
 /* Variable */
 :root {
-    --main-red-color: #9e1a1a;
-    --main-text-color: #282828;
+    --main-red-color: #733236;
+    --second-color: #e3dbd3;
+    --third-color: #9cb2a5;
+    --fourth-color: #8ba4b3;
+    --fifth-color: #c8b7c9;
+    --sixth-color: #9d7982;
+    --main-text-color: #383838;
     --main-bg-color: #fff;
     --title-font: 'Playfair Display', serif;
     --text-font: 'Raleway', sans-serif;
@@ -19,7 +24,7 @@ body {
     color: var(--main-text-color);
 }
 header {
-    background-color: #F5F5F5;
+    background-color: var(--third-color);
     width: 100%;
     height: 100vh;
 }
@@ -33,7 +38,7 @@ header {
     z-index: 100;
     width: 100vw;
     height: 7vh;
-    box-shadow: 0 5px 5px whitesmoke;;
+    box-shadow: 0 5px 5px whitesmoke;
 }
 ul {
     display: inline-flex;
@@ -66,7 +71,6 @@ ul li a:hover {
     top: 25%;
     right: 25%;
     z-index: 2;
-    filter: grayscale(80%);
 }
 .empty-div {
     position: absolute;
@@ -78,7 +82,6 @@ ul li a:hover {
 }
 .empty-div img {
     width: 100%;
-    filter: grayscale(90%);
 }
 #cta {
     position: absolute;
@@ -86,18 +89,23 @@ ul li a:hover {
     left: 20%;
     width: 25%;
     height: 30%;
-    border: 1px dotted gray;
+    border-radius: 10px;
     padding: 3%;
     z-index: 3;
-    background-color: #F8F8F8;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
 }
 #cta p {
     font-size: 1.5rem;
+    color: var(--main-red-color);
 }
 #cta-btn {
     color: var(--main-red-color);
+    background-color: #fff;
+    border: 1.5px solid var(--main-red-color);
+    border-radius: 10px;
+    padding: 1.5%;
     width: 8rem;
     height: 2rem;
     font-size: 1.25rem;
@@ -105,11 +113,21 @@ ul li a:hover {
 }
 #cta i {
     font-size: 1.5rem;
-    color: var(--main-bg-color);
-    background-color: var(--main-text-color);
+    color: var(--fourth-color);
+    border: 1px dashed var(--fourth-color);
     padding: 2%;
     border-radius: 50%;
     margin: 5% 1% 1%;
+}
+#arrow-down {
+    color: #fff;
+    font-size: 2.5rem;
+}
+.arrow-down{
+    text-align: center;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
 }
 
 /* PROJECTS SECTION */
@@ -125,16 +143,18 @@ ul li a:hover {
     margin: 5% 0 3%;
 }
 #project-tile {
-    width: 85%;
+    width: 90%;
     height: auto;
     background-color: #fff;
     display: flex;
     flex-flow: row wrap;
     margin: 0 auto;
+    padding: 5%;
 }
 .project {
     width: 22.5%;
     max-height: 30%;
+    background-color: #fff;
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin: 1%;
@@ -147,14 +167,13 @@ ul li a:hover {
 .project img {
     width: 100%;
     height: 20rem;
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
     border-radius: 9px 9px 0 0;
 }
 .project img:hover {
-    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(0%);
     cursor: pointer;
+}
+.projects-button {
+    display: none;
 }
 .card-text {
     padding: 2%;
@@ -172,7 +191,7 @@ ul li a:hover {
 .skills {
     width: 100%;
     height: auto;
-    background-color:	#E0E0E0;
+    background-color: #fff;
     margin-top: 5%;
 }
 .skills h2 {
@@ -190,6 +209,21 @@ ul li a:hover {
 }
 .jquery {
     width: 25rem;
+    filter: grayscale(100%);
+    margin: 1% 3%;
+}
+.vs-code {
+    width: 22.5rem;
+    filter: grayscale(100%);
+    margin: 1% 3%;
+}
+.sublime {
+    width: 10rem;
+    filter: grayscale(100%);
+    margin: 1% 3%;
+}
+.emmet {
+    width: 9rem;
     filter: grayscale(100%);
     margin: 1% 3%;
 }
@@ -220,11 +254,69 @@ ul li a:hover {
 .skills-text p{
     font-size: 2rem;
     width: 45%;
-    
 }
 /* Footer */
 footer {
     width: 100%;
     height: 20vh;
-    background-color: #484848;
+    background-color: var(--sixth-color);
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .hero-image {
+        width: 75vw;
+        height: 50vh;
+        top: 15%;
+        right: 10%;
+    }
+    .empty-div {
+        display: none;
+    }
+    #cta {
+        position: absolute;
+        top: 70%;
+        left: 15%;
+        width: 65%;
+        height: 20%;
+    }
+    #project-tile {
+        flex-direction: column;
+    }
+    .project {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .project-6, .project-7, .project-8, .project-9, .project-10, .project-11, .project-12 {
+        display: none;
+    }
+    .projects-button {
+        display: block;
+        cursor: pointer;
+        padding: 1.5% 3%;
+        border-radius: 10px;
+        border: 2px solid var(--second-color);
+        background-color: var(--main-red-color);
+        color: var(--second-color);
+        font-family: var(--text-font);
+        font-size: 1.25rem;
+        margin: 0 auto;
+    }
+    .proj-link {
+        text-decoration: none;
+    }
+    .projects-button:hover {
+        color: var(--main-red-color);
+        background-color: var(--second-color);
+        font-weight: 600;
+        border: 2px solid var(--main-red-color);
+    }
+    .skills-text {
+        flex-direction: column;
+    }
+    .skills-text p{
+        font-size: 1.5rem;
+        width: 85%;
+    }
+ 
 }
