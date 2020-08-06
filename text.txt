@@ -1,0 +1,53 @@
+user 1 - #welcome-section
+user 2 - h1
+user 3 - #projects
+user 4 - #project-tile
+user 5 - 
+user 6 - #navbar
+user 7
+user 8
+user 9
+user 10
+user 11
+
+JS animations:
+ONLOAD:
+Move images and cta 
+contact me hover 
+contact me bgcolor gradient
+
+https://images.pexels.com/photos/39284/macbook-apple-imac-computer-39284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+
+Fonts: Lora
+Open Sans
+Montserrat
+Lato
+
+color shades: 
+gray
+https://www.w3schools.com/colors/colors_shades.asp
+
+mauve:
+#672147
+
+maroon: 
+#800000
+
+red: 
+#9e1a1a brighter
+#680101
+
+or this:
+cranberry: #711628
+frost mauve: #d9c3c6
+fresh snow: #f7f6fc
+joyful gray: #676463
+
+or:
+#e3dbd3 - cream
+#9cb2a5 - green
+#8ba4b3 - blue
+#c8b7c9 - light pink
+#9d7982 - taupe/mauve
+#733236 - maroon
+https://www.pinterest.com/pin/685884218235816021/
