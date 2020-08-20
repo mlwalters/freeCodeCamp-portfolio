@@ -1,268 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="welcome-section">
-        <nav id="navbar">
-            <img src="img/name-logo.jpg" alt="logo" class="logo">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Info</a></li>
-                <li><a href="https://github.com/carrimaxx" id="profile-link" target="_blank">Github</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- Landing page -->
-       <div class="cta">
-            <button type="button" class="btn btn-secondary">Secondary</button>
-            <button type="button" class="btn btn-outline-secondary">Secondary</button>
-       </div>
-        <div id="landing-page">
-            <img src="/img/undraw_programmer_imem.png" alt="" id="hero-image">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+            <a class="navbar-brand" href="#"><img src="img/name-logo.jpg" alt="logo" class="logo navbar-brand" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/carrimaxx" id="profile-link" target="_blank">Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+      
+      <!-- Landing page -->
+      <div id="landing-page">
+        <video playsinline autoplay muted loop id="hero-image">
+          <source src="videos/Coding.mp4" type="video/mp4" />
+        </video>
+        <div id="landing-page-text">
+            <h1>Front-End Developer</h1>
+            <p>Based in Southern Illinois/ Greater St. Louis. Available for full-time remote jobs.</p>
+            <button type="button" class="btn btn-secondary">I am looking to hire <i class="fas fa-angle-right"></i></button>
+            <button type="button" class="btn btn-outline-secondary">I need a website <i class="fas fa-angle-right"></i></button>
         </div>
+      </div>
     </header>
 
     <section id="projects">
-        <h2>My Projects</h2>
-        <div id="project-tile">
-            <div class="project project-1">
-                <div class="card-image card-image1">
-                    <img src="img/stayathome.jpg" alt="Stay at home website preview">
-                </div>
-                <div class="card-text card-text1">
-                    <h4>Stay at Home</h4>
-                    <p>A page aimed at helping people in quarantine</p>
-                </div>
-            </div>
-            <div class="project project-2">
-                <div class="card-image card-image2">
-                    <img src="img/productlanding.jpg" alt="Product landing page preview">
-                </div>
-                <div class="card-text card-text2">
-                    <h4>FCC Product Landing page</h4>
-                    <p>Responsive with call-to-action buttons on landing page</p>
-                </div>
-            </div>
-            <div class="project project-3">
-                <div class="card-image card-image3">
-                    <img src="img/kaikitchen.jpg" alt="Sample recipe page preview">
-                </div>
-                <div class="card-text card-text3">
-                    <h4>Sample recipe page</h4>
-                    <p>Using bootstrap menu and extremely responsive</p>
-                </div>
-            </div>
-            <div class="project project-4">
-                <div class="card-image card-image4">
-                    <img src="img/dicegame.jpg" alt="Dice game preview">
-                </div>
-                <div class="card-text card-text4">
-                    <h4>Dice Game</h4>
-                    <p>Challenge completed through a Udemy course, with additional refresh button</p>
-                </div>
-            </div>
-            <div class="project project-5">
-                <div class="card-image card-image5">
-                    <img src="img/todolist.jpg" alt="Todo web app preview">
-                </div>
-                <div class="card-text card-text5">
-                    <h4>Todo Web App</h4>
-                    <p>Followed Developed by Ed's tutorial plus additional toggle button to hide info</p>
-                </div>
-            </div>
-            <div class="project project-6">
-                <div class="card-image card-image6">
-                    <img src="img/form.jpg" alt="FCC survey form preview">
-                </div>
-                <div class="card-text card-text6">
-                    <h4>FCC Survey Form</h4>
-                    <p>Mobile and tablet friendly survey form</p>
-                </div>
-            </div>
-            <div class="project project-7">
-                <div class="card-image card-image7">
-                    <img src="img/techdocumentation.jpg" alt="FCC technical documentation page preview">
-                </div>
-                <div class="card-text card-text7">
-                    <h4>FCC Technical Documentation</h4>
-                    <p>Technical documentation page for CSS Flexbox</p>
-                </div>
-            </div>
-            <div class="project project-8">
-                <div class="card-image card-image8">
-                    <img src="img/tributepage.jpg" alt="FCC tribute page preview">
-                </div>
-                <div class="card-text card-text8">
-                    <h4>FCC Tribute Page</h4>
-                    <p>A simple tribute page for Hans Rosling that responds to any viewport</p>
-                </div>
-            </div>
-            <div class="project project-9">
-                <div class="card-image card-image9">
-                    <img src="img/overlayimage.jpg" alt="Overlay image preview">
-                </div>
-                <div class="card-text card-text9">
-                    <h4>Overlay hero image</h4>
-                    <p>Sample overlay hero image using tags for SEO</p>
-                </div>
-            </div>
-            <div class="project project-10">
-                <div class="card-image card-image10">
-                    <img src="img/recipecard.jpg" alt="Recipe card template preview">
-                </div>
-                <div class="card-text card-text10">
-                    <h4>Recipe card template</h4>
-                    <p>Including a social media button, simple but functional</p>
-                </div>
-            </div>
-            <div class="project project-11">
-                <div class="card-image card-image11">
-                    <img src="img/formsample.jpg" alt="Input form template preview">
-                </div>
-                <div class="card-text card-text11">
-                    <h4>Input form template</h4>
-                    <p>Basic and concise input form</p>
-                </div>
-            </div>
-            <div class="project project-12">
-                <div class="card-image card-image12">
-                    <img src="img/cardsample.jpg" alt="Card template with social media links preview">
-                </div>
-                <div class="card-text card-text12">
-                    <h4>Card template</h4>
-                    <p>Including social media links</p>
-                </div>
-            </div>
-            <a href="#" class="proj-link"><button class="projects-button">See all projects</button></a>
-
+      <h2>My Projects</h2>
+      <div id="project-tile">
+        <div class="project project-1">
+          <div class="card-image card-image1">
+            <img src="img/stayathome.jpg" alt="Stay at home website preview" />
+          </div>
+          <div class="card-text card-text1">
+            <h4>Stay at Home</h4>
+            <p>A page aimed at helping people in quarantine</p>
+          </div>
         </div>
+        <div class="project project-2">
+          <div class="card-image card-image2">
+            <img
+              src="img/productlanding.jpg"
+              alt="Product landing page preview"
+            />
+          </div>
+          <div class="card-text card-text2">
+            <h4>FCC Product Landing page</h4>
+            <p>Responsive with call-to-action buttons on landing page</p>
+          </div>
+        </div>
+        <div class="project project-3">
+          <div class="card-image card-image3">
+            <img src="img/kaikitchen.jpg" alt="Sample recipe page preview" />
+          </div>
+          <div class="card-text card-text3">
+            <h4>Sample recipe page</h4>
+            <p>Using bootstrap menu and extremely responsive</p>
+          </div>
+        </div>
+        <div class="project project-4">
+          <div class="card-image card-image4">
+            <img src="img/dicegame.jpg" alt="Dice game preview" />
+          </div>
+          <div class="card-text card-text4">
+            <h4>Dice Game</h4>
+            <p>
+              Challenge completed through a Udemy course, with additional
+              refresh button
+            </p>
+          </div>
+        </div>
+        <div class="project project-5">
+          <div class="card-image card-image5">
+            <img src="img/todolist.jpg" alt="Todo web app preview" />
+          </div>
+          <div class="card-text card-text5">
+            <h4>Todo Web App</h4>
+            <p>
+              Followed Developed by Ed's tutorial plus additional toggle button
+              to hide info
+            </p>
+          </div>
+        </div>
+        <div class="project project-6">
+          <div class="card-image card-image6">
+            <img src="img/form.jpg" alt="FCC survey form preview" />
+          </div>
+          <div class="card-text card-text6">
+            <h4>FCC Survey Form</h4>
+            <p>Mobile and tablet friendly survey form</p>
+          </div>
+        </div>
+        <div class="project project-7">
+          <div class="card-image card-image7">
+            <img
+              src="img/techdocumentation.jpg"
+              alt="FCC technical documentation page preview"
+            />
+          </div>
+          <div class="card-text card-text7">
+            <h4>FCC Technical Documentation</h4>
+            <p>Technical documentation page for CSS Flexbox</p>
+          </div>
+        </div>
+        <div class="project project-8">
+          <div class="card-image card-image8">
+            <img src="img/tributepage.jpg" alt="FCC tribute page preview" />
+          </div>
+          <div class="card-text card-text8">
+            <h4>FCC Tribute Page</h4>
+            <p>
+              A simple tribute page for Hans Rosling that responds to any
+              viewport
+            </p>
+          </div>
+        </div>
+        <div class="project project-9">
+          <div class="card-image card-image9">
+            <img src="img/overlayimage.jpg" alt="Overlay image preview" />
+          </div>
+          <div class="card-text card-text9">
+            <h4>Overlay hero image</h4>
+            <p>Sample overlay hero image using tags for SEO</p>
+          </div>
+        </div>
+        <div class="project project-10">
+          <div class="card-image card-image10">
+            <img src="img/recipecard.jpg" alt="Recipe card template preview" />
+          </div>
+          <div class="card-text card-text10">
+            <h4>Recipe card template</h4>
+            <p>Including a social media button, simple but functional</p>
+          </div>
+        </div>
+        <div class="project project-11">
+          <div class="card-image card-image11">
+            <img src="img/formsample.jpg" alt="Input form template preview" />
+          </div>
+          <div class="card-text card-text11">
+            <h4>Input form template</h4>
+            <p>Basic and concise input form</p>
+          </div>
+        </div>
+        <div class="project project-12">
+          <div class="card-image card-image12">
+            <img
+              src="img/cardsample.jpg"
+              alt="Card template with social media links preview"
+            />
+          </div>
+          <div class="card-text card-text12">
+            <h4>Card template</h4>
+            <p>Including social media links</p>
+          </div>
+        </div>
+        <a href="#" class="proj-link"
+          ><button class="projects-button">See all projects</button></a
+        >
+      </div>
     </section>
-    <section class="skills">
-        <h2>Skills & Certification</h2>
-        <div class="skills-wrapper">
-            <div class="skills-icons">
-                <div>
-                    <i class="fab fa-html5"></i>
-                    <p>HTML 5</p>
-                </div>
-                <div>            
-                    <i class="fab fa-css3"></i>
-                    <p>CSS 3</p>
-                </div>
-                <div>            
-                    <i class="fab fa-js-square"></i>
-                    <p>JavaScript</p>
-                </div>
-                <div>            
-                    <i class="fab fa-bootstrap"></i>
-                    <p>BootStrap</p>
-                </div>
-                <div>            
-                    <i class="fab fa-sass"></i>
-                    <p>Sass</p>
-                </div>
-                <div>            
-                    <img src="https://cdn.freebiesupply.com/logos/large/2x/jquery-1-logo-svg-vector.svg" class="jquery">
-                    <p>jQuery</p>
-                </div>
-                <!-- <div>            
-                    <i class="fab fa-react"></i>
-                    <p>React</p>
-                </div> -->
-                <!-- <div>            
-                    <img src="https://cdn.iconscout.com/icon/free/png-256/redux-283024.png" class="redux" alt="">
-                    <p>Redux</p>
-                </div> -->
-                <div>            
-                    <i class="fab fa-git"></i>
-                    <p>Git</p>
-                </div>
-                <div>            
-                    <i class="fab fa-github-square"></i>
-                    <p>Github</p>
-                </div>
-                <div>            
-                    <img src="https://blog.launchdarkly.com/wp-content/uploads/2018/10/visualstudio_code-card.png" alt="" class="vs-code">
-                    <p>Visual Studio Code</p>
-                </div>
-                <div>            
-                    <img src="https://www.sublimehq.com/images/sublime_text.png" alt="" class="sublime">
-                    <p>Sublime Text</p>
-                </div>
-                <div>            
-                    <img src="https://emmet.io/i/logo-large.png" alt="" class="emmet">
-                    <p>Emmet</p>
-                </div>
-        
-            </div>
+    <section class="skills" id="skills">
+      <h2>Skills & Certification</h2>
+      <div class="skills-wrapper">
+        <div class="skills-icons">
+          <div>
+            <i class="fab fa-html5"></i>
+            <p>HTML 5</p>
+          </div>
+          <div>
+            <i class="fab fa-css3"></i>
+            <p>CSS 3</p>
+          </div>
+          <div>
+            <i class="fab fa-js-square"></i>
+            <p>JavaScript</p>
+          </div>
+          <div>
+            <i class="fab fa-bootstrap"></i>
+            <p>BootStrap</p>
+          </div>
+          <div>
+            <i class="fab fa-sass"></i>
+            <p>Sass</p>
+          </div>
+          <div>
+            <img
+              src="https://cdn.freebiesupply.com/logos/large/2x/jquery-1-logo-svg-vector.svg"
+              class="jquery"
+            />
+            <p>jQuery</p>
+          </div>
+          <div>
+            <i class="fab fa-git"></i>
+            <p>Git</p>
+          </div>
+          <div>
+            <i class="fab fa-github-square"></i>
+            <p>Github</p>
+          </div>
+          <div>
+            <img
+              src="https://blog.launchdarkly.com/wp-content/uploads/2018/10/visualstudio_code-card.png"
+              alt=""
+              class="vs-code"
+            />
+            <p>Visual Studio Code</p>
+          </div>
+          <div>
+            <i class="fab fa-node"></i>
+            <p>Node.js</p>
+          </div>
+          <div>
+            <i class="fab fa-npm"></i>
+            <p>npm</p>
+          </div>
+          <div>
+            <img
+              src="https://expressjs.com/images/express-facebook-share.png"
+              alt=""
+              class="sublime"
+            />
+            <p>Express</p>
+          </div>
+          <div>
+            <img
+              src="https://www.sublimehq.com/images/sublime_text.png"
+              alt=""
+              class="sublime"
+            />
+            <p>Sublime Text</p>
+          </div>
+          <div>
+            <img src="https://emmet.io/i/logo-large.png" alt="" class="emmet" />
+            <p>Emmet</p>
+          </div>
+        </div>
 
-            <div class="cert-icons">
-                <div class="fcc-rwd">
-                    <div class="certs-title">
-                        <i class="fab fa-free-code-camp"></i>
-                        <h3>FreeCodeCamp</h3>
-                        <p>Responsive Web Design Certification</p>
-                    </div>
-                    <p><i class="fas fa-check"></i> Basic HTML & HTML5</p>
-                    <p><i class="fas fa-check"></i> Basic CSS</p>
-                    <p><i class="fas fa-check"></i> Applied Visual Design</p>
-                    <p><i class="fas fa-check"></i> Responsive web design principles</p>
-                    <p><i class="fas fa-check"></i> CSS Flexbox</p>
-                    <p><i class="fas fa-check"></i> CSS Grid</p>
-                    <p><i class="fas fa-check"></i> CSS3 Animations</p>
-                    <p><i class="fas fa-check"></i> Applied Accessibility</p>
-                </div>
-                <div class="fcc-js">
-                    <div class="certs-title">
-                        <i class="fab fa-free-code-camp"></i>
-                        <h3>FreeCodeCamp</h3>
-                        <p>JavaScript Algorithms and Data Structures Certification</p>
-                    </div>
-                    <p><i class="fas fa-check"></i> Algorithm Scripting</p>
-                    <p><i class="fas fa-check"></i> ES6</p>
-                    <p><i class="fas fa-check"></i> Regular Expressions</p>
-                    <p><i class="fas fa-check"></i> Debugging</p>
-                    <p><i class="fas fa-check"></i> Data Structures</p>
-                    <p><i class="fas fa-check"></i> Object Oriented Programming</p>
-                    <p><i class="fas fa-check"></i> Functional Programming</p>
-                </div>
-                <div class="fcc-fel">
-                    <div class="certs-title">
-                        <i class="fab fa-free-code-camp"></i>
-                        <h3>FreeCodeCamp</h3>
-                        <p>Front-End Libraries Certification</p>
-                    </div>
-                    <p><i class="fas fa-check"></i> Bootstrap</p>
-                    <p><i class="fas fa-check"></i> jQuery</p>
-                    <p><i class="fas fa-check"></i> Sass</p>
-                    <p><i class="fas fa-check"></i> React</p>
-                    <p><i class="fas fa-check"></i> Redux</p>
-                    <p><i class="fas fa-check"></i> React & Redux</p>
-                </div>
+        <div class="cert-icons">
+          <div class="fcc-rwd">
+            <div class="certs-title">
+              <i class="fab fa-free-code-camp"></i>
+              <h3>FreeCodeCamp</h3>
+              <p>Responsive Web Design Certification</p>
             </div>
-    </div>
-
+            <p class="certs-p">
+              <i class="fas fa-check"></i> Basic HTML & HTML5
+            </p>
+            <p class="certs-p"><i class="fas fa-check"></i> Basic CSS</p>
+            <p class="certs-p">
+              <i class="fas fa-check"></i> Applied Visual Design
+            </p>
+            <p class="certs-p">
+              <i class="fas fa-check"></i> Responsive web design principles
+            </p>
+            <p class="certs-p"><i class="fas fa-check"></i> CSS Flexbox</p>
+            <p class="certs-p"><i class="fas fa-check"></i> CSS Grid</p>
+            <p class="certs-p"><i class="fas fa-check"></i> CSS3 Animations</p>
+            <p class="certs-p">
+              <i class="fas fa-check"></i> Applied Accessibility
+            </p>
+          </div>
+          <div class="fcc-js">
+            <div class="certs-title">
+              <i class="fab fa-free-code-camp"></i>
+              <h3>FreeCodeCamp</h3>
+              <p>JavaScript Algorithms and Data Structures Certification</p>
+            </div>
+            <p class="certs-p">
+              <i class="fas fa-check"></i> Algorithm Scripting
+            </p>
+            <p class="certs-p"><i class="fas fa-check"></i> ES6</p>
+            <p class="certs-p">
+              <i class="fas fa-check"></i> Regular Expressions
+            </p>
+            <p class="certs-p"><i class="fas fa-check"></i> Debugging</p>
+            <p class="certs-p"><i class="fas fa-check"></i> Data Structures</p>
+            <p class="certs-p">
+              <i class="fas fa-check"></i> Object Oriented Programming
+            </p>
+            <p class="certs-p">
+              <i class="fas fa-check"></i> Functional Programming
+            </p>
+          </div>
+          <div class="fcc-fel">
+            <div class="certs-title">
+              <i class="fab fa-free-code-camp"></i>
+              <!-- <img src="https://www.launchcode.org/assets/press/Logo%20-%20LaunchCode-800pxW-32a364a7012c11780c7ce03c83a253bd119e08f482a87623f33c23cbdc1ebf4b.jpg" alt=""> -->
+              <h3>FreeCodeCamp</h3>
+              <p>Front-End Libraries Certifications</p>
+            </div>
+            <p class="certs-p"><i class="fas fa-check"></i> Bootstrap</p>
+            <p class="certs-p"><i class="fas fa-check"></i> jQuery</p>
+            <p class="certs-p"><i class="fas fa-check"></i> Sass</p>
+            <p class="certs-p"><i class="fas fa-check"></i> React</p>
+            <p class="certs-p"><i class="fas fa-check"></i> Redux</p>
+            <p class="certs-p"><i class="fas fa-check"></i> React & Redux</p>
+          </div>
+        </div>
+      </div>
     </section>
-    <footer>
-        <!-- <div class="bg-white"></div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,320L40,282.7C80,245,160,171,240,149.3C320,128,400,160,480,160C560,160,640,128,720,101.3C800,75,880,53,960,74.7C1040,96,1120,160,1200,165.3C1280,171,1360,117,1400,90.7L1440,64L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
-        <div id="video">
-           <video playsinline autoplay muted loop id="vid">
-            <source src="videos/Love-Coding.mp4" type="video/mp4">
-           </video>
-        </div> -->
-      
-        
-
+    <footer id="contact">
+        <i class="fas fa-envelope"></i>
+        <p>Send an email</p>
+        <i class="fas fa-share"></i>
+        <p>Share my portfolio</p>
+      <a href="https://stories.freepik.com/web"
+        >Illustration by Freepik Stories</a
+      >
     </footer>
 
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

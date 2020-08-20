@@ -9,6 +9,14 @@ user 8
 user 9
 user 10
 user 11
+-----------------------------------------------------------------
+
+FREEPIK:
+
+https://stories.freepik.com/illustration/coding/amico/animate
+
+-------------------------------------------------------------------
+
 
 JS animations:
 ONLOAD:
