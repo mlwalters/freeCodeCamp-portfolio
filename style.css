@@ -343,7 +343,7 @@ header {
         height: auto;
         right: 30%;
     }
-    #project-tile {
+    .project-tile {
         flex-direction: column;
     }
     .project {
